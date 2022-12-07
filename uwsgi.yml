@@ -1,0 +1,7 @@
+uwsgi:
+  socket: /tmp/nft_paintings.sock
+  module: nft_paintings.wsgi:application
+  chmod-socket: 666
+  master: true
+  processes: 4
+  enable-threads: true
